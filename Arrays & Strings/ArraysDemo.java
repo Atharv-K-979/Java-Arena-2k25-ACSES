@@ -29,4 +29,3 @@ public class ArraysDemo {
         
     }
 }
-git push -u origin main --force
