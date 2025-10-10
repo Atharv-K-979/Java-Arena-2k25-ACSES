@@ -3,19 +3,21 @@
 public class Loops {
     public static void main(String[] args) {
         int num = 8;
-        int count = 0;
+        bool found = false;
 
-        for(int i = num; i >= 1; i--){
+        for(int i = num; i >= 2; i--){
             if(num % i == 0){
-                count++;
+                found = true;
+                break
             }
         }
-        if(count == 2){
-            System.out.println("Is Prime");
+        if(found){
+            System.out.println("Is not Prime");
         }
         else{
-            System.out.println("Is not Prime");
+            System.out.println("Is Prime");
         }
     }
     
 }
+
