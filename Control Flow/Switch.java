@@ -1,47 +1,34 @@
 /*
-Write a Java program to tell the current day as per its number.
-
+WAP to perform +, -, *, / operator for two numbers.
 Use a switch statement to perform the operation:
-
-1 : Sunday
-2 : Monday
-3 : Tuesday
-4 : Wednesday
-5 : Thursday
-6 : Friday
-7 : Saturday
 
 */
 
 public class Switch {
     public static void main(String[] args) {
-        int day = 1;
+        int num1 = 20;
+        int num2 = 10;
+
+        char operator = '+';
     
-        switch(day){
-            case 1:
-                System.out.println("Sunday");
+        switch(operator){
+            case '+':
+                System.out.println(num1 + num2);
                 break;
-            case 2:
-                System.out.println("Monday");
+            case '-':
+                System.out.println(num1 - num2);
                 break;
-            case 3:
-                System.out.println("Tuesday");
+            case '*':
+                System.out.println(num1 * num2);
                 break;
-            case 4:
-                System.out.println("Wednesday");
+            case '/':
+                System.out.println(num1 / num2);
                 break;
-            case 5:
-                System.out.println("Thursday");
-                break;
-            case 6:
-                System.out.println("Friday");
-                break;
-            case 7:
-                System.out.println("Saturday");
-                break;
+            
         }
     }
     
 
 }
+
 
