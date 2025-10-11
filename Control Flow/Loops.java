@@ -1,23 +1,15 @@
-// WAP to check whether num is Prime or not.
+// WAP to sum of first N natural numbers.
 
 public class Loops {
     public static void main(String[] args) {
         int num = 8;
-        bool found = false;
+        int sum = 0;
 
-        for(int i = num; i >= 2; i--){
-            if(num % i == 0){
-                found = true;
-                break
-            }
+        for(int i = 1; i <= num; i++){
+            sum += i;
         }
-        if(found){
-            System.out.println("Is not Prime");
-        }
-        else{
-            System.out.println("Is Prime");
-        }
+        
+        System.out.println(sum);
     }
     
 }
-
